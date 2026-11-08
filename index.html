@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Робота м’язів. Втома м’язів та її причини — 8 клас</title>
+<style>
+:root{--bg:#eaf1ff;--card:#fff;--ink:#14213d;--mut:#3b4a6b;--pri:#2b59c3;--pri-ink:#fff;--acc:#ffc933;--teal:#0a7f72;--ok:#146c3c;--okbg:#d8f5e3;--bad:#b3223d;--badbg:#fde0e5;--line:#b9c8ec;--hl:#fff4cc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1630;--card:#18244a;--ink:#f3f6ff;--mut:#c4d0f0;--pri:#7fa6ff;--pri-ink:#0e1630;--acc:#ffd24d;--teal:#4fd6c5;--ok:#7ee2a8;--okbg:#14402b;--bad:#ff9fb0;--badbg:#4a1b2a;--line:#3a4c85;--hl:#3b3512}}
+:root[data-theme="dark"]{--bg:#0e1630;--card:#18244a;--ink:#f3f6ff;--mut:#c4d0f0;--pri:#7fa6ff;--pri-ink:#0e1630;--acc:#ffd24d;--teal:#4fd6c5;--ok:#7ee2a8;--okbg:#14402b;--bad:#ff9fb0;--badbg:#4a1b2a;--line:#3a4c85;--hl:#3b3512}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Trebuchet MS","Segoe UI",Verdana,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:14px}
+header{background:var(--pri);color:var(--pri-ink);border-radius:18px;padding:18px;border-bottom:6px solid var(--acc)}
+h1{margin:0 0 4px;font-size:1.45rem;line-height:1.25}h2{margin:0 0 10px;font-size:1.25rem;color:var(--pri)}h3{margin:14px 0 6px}
+header p{margin:0 0 12px}
+.who{display:flex;gap:10px;flex-wrap:wrap}
+.who label{flex:1 1 220px;font-weight:700;font-size:.95rem}
+input[type=text],textarea,select{width:100%;font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:10px;padding:8px 10px;margin-top:3px}
+textarea{min-height:70px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+nav button{flex:1 1 150px;font:inherit;font-weight:700;padding:11px;border-radius:12px;border:2px solid var(--pri);background:var(--card);color:var(--pri);cursor:pointer}
+nav button[aria-selected=true]{background:var(--pri);color:var(--pri-ink)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.page{display:none}.page.on{display:block}
+.card{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:16px;margin-bottom:16px}
+.card.a{border-left:10px solid #e0527a}.card.b{border-left:10px solid var(--teal)}.card.c{border-left:10px solid var(--acc)}.card.d{border-left:10px solid var(--pri)}
+.pts{display:inline-block;background:var(--acc);color:#14213d;font-weight:800;border-radius:999px;padding:2px 12px;font-size:.9rem;margin-left:6px}
+.q{padding:10px 0;border-top:1px dashed var(--line)}.q:first-of-type{border-top:0}
+.q.ok{background:var(--okbg);border-radius:10px;padding:10px}.q.bad{background:var(--badbg);border-radius:10px;padding:10px}
+.opt{display:block;padding:5px 4px}.opt input{margin-right:8px;transform:scale(1.2)}
+.btn{font:inherit;font-weight:800;background:var(--pri);color:var(--pri-ink);border:0;border-radius:12px;padding:10px 20px;cursor:pointer;margin-top:10px}
+.btn.s{background:var(--teal);color:#fff}
+.res{margin-top:8px;font-weight:800}
+.ans{font-size:.92rem;color:var(--mut)}
+.total{background:var(--hl);border:3px solid var(--acc);border-radius:16px;padding:16px;text-align:center}
+.total b{font-size:2rem;color:var(--pri)}
+.defs{background:var(--hl);border-radius:10px;padding:8px 14px;margin-bottom:8px}
+.defs div{padding:2px 0}
+.mrow{display:grid;grid-template-columns:1fr 90px;gap:10px;align-items:center;padding:6px 0}
+table{border-collapse:collapse;width:100%;margin:8px 0}th,td{border:2px solid var(--line);padding:6px;text-align:left}th{background:var(--pri);color:var(--pri-ink)}
+td input{margin:0}
+.warn{background:var(--badbg);border-left:8px solid var(--bad);padding:10px 14px;border-radius:10px}
+.tip{background:var(--okbg);border-left:8px solid var(--ok);padding:10px 14px;border-radius:10px;margin:8px 0}
+.sa{padding:10px 0;border-top:1px dashed var(--line)}.sa .row{display:flex;gap:14px;flex-wrap:wrap;margin-top:4px}
+.sa label{font-weight:700}
+.sa-t{font-weight:700}
+.printbtn{float:right}
+@media print{nav,.btn,.printbtn{display:none}.page{display:block!important}body{background:#fff}}
+@media (max-width:520px){.mrow{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Робота м’язів. Втома м’язів та її причини</h1>
+<p>Біологія, 8 клас · § 21 підручника, с. 90–93</p>
+<div class="who">
+<label>Прізвище та ім’я<input type="text" id="name" placeholder="Наприклад: Коваленко Олена" autocomplete="name"></label>
+<label>Клас і дата<input type="text" id="cls" placeholder="8-Б, 08.11.2026"></label>
+</div>
+</header>
+
+<nav role="tablist">
+<button role="tab" aria-selected="true" data-p="p1">1. Вправи</button>
+<button role="tab" aria-selected="false" data-p="p2">2. Лабораторне дослідження</button>
+<button role="tab" aria-selected="false" data-p="p3">3. Самооцінювання</button>
+</nav>
+
+<!-- ВПРАВИ -->
+<section class="page on" id="p1">
+<div class="card a"><h2>Завдання 1. Так чи ні? <span class="pts">3 бали</span></h2>
+<p class="ans">Кожна правильна відповідь — 0,5 бала.</p>
+<div id="tf"></div><button class="btn" onclick="chkTF()">Перевірити</button><div class="res" id="r1"></div></div>
+
+<div class="card b"><h2>Завдання 2. Заповни пропуски <span class="pts">2 бали</span></h2>
+<p class="ans">Обери з переліку слово, яке пасує. Кожен пропуск — 0,5 бала.</p>
+<div id="fill"></div><button class="btn" onclick="chkFill()">Перевірити</button><div class="res" id="r2"></div></div>
+
+<div class="card c"><h2>Завдання 3. Встанови відповідність <span class="pts">3 бали</span></h2>
+<p class="ans">До кожного поняття добери визначення (А–Е). Кожна пара — 0,5 бала.</p>
+<div class="defs" id="defs"></div><div id="match"></div><button class="btn" onclick="chkMatch()">Перевірити</button><div class="res" id="r3"></div></div>
+
+<div class="card d"><h2>Завдання 4. Тест <span class="pts">4 бали</span></h2>
+<p class="ans">Одна правильна відповідь. Кожне запитання — 1 бал.</p>
+<div id="test"></div><button class="btn" onclick="chkTest()">Перевірити</button><div class="res" id="r4"></div></div>
+
+<div class="total"><div>Результат за 12-бальною шкалою</div><b id="tot">0</b> <b>/ 12</b>
+<div id="totmsg" class="ans"></div>
+<button class="btn s" onclick="sum()">Підрахувати бали</button></div>
+</section>
+
+<!-- ЛАБОРАТОРНА -->
+<section class="page" id="p2">
+<div class="card d">
+<button class="btn printbtn" onclick="window.print()">Друк</button>
+<h2>Лабораторне дослідження</h2>
+<h3 style="margin-top:0">Дослідження розвитку втоми під час статичного та динамічного навантаження</h3>
+<p><b>Мета:</b> порівняти, як швидко настає втома м’язів за статичної та динамічної роботи, і пояснити причини втоми.</p>
+<p><b>Обладнання:</b> секундомір (на телефоні), вантаж масою 1–2 кг (підручник, пляшка з водою), стілець, лінійка, пара для роботи (один виконує, другий вимірює час і рахує).</p>
+<div class="warn"><b>Безпека.</b> Не обирайте надто важкий вантаж. Припиняйте вправу, щойно з’явилися різкий біль, тремтіння або запаморочення. Вантаж не кидайте.</div>
+
+<h3>Частина 1. Статична робота</h3>
+<ol>
+<li>Сядьте. Візьміть вантаж у праву руку (або в ліву — для лівші).</li>
+<li>Витягніть руку з вантажем уперед на рівні плеча. Партнер вмикає секундомір.</li>
+<li>Тримайте руку нерухомо, доки не відчуєте, що більше не можете. Партнер зупиняє секундомір.</li>
+<li>Запишіть час до втоми в таблицю.</li>
+<li>Відпочиньте 5 хвилин (рука розслаблена).</li>
+</ol>
+
+<h3>Частина 2. Динамічна робота</h3>
+<ol>
+<li>Візьміть той самий вантаж у ту саму руку.</li>
+<li>У середньому темпі (приблизно один підйом за 2 секунди) піднімайте руку з вантажем до рівня плеча й опускайте.</li>
+<li>Партнер рахує кількість підйомів і вимірює час, поки руху не стане важко виконувати.</li>
+<li>Запишіть кількість підйомів і час.</li>
+</ol>
+
+<h3>Частина 3. Вплив відпочинку (за бажанням)</h3>
+<p>Після втоми одну хвилину відпочивайте пасивно (рука лежить на колінах), потім повторіть Частину 1. Іншим разом відпочивайте активно (обережно стискайте й розтискайте кисть іншої руки та рухайте плечима) й повторіть вимірювання. Порівняйте результати.</p>
+
+<h3>Результати</h3>
+<table>
+<tr><th>Вид роботи</th><th>Час до втоми, с</th><th>Кількість підйомів</th></tr>
+<tr><td>Статична</td><td><input type="text" id="t1" inputmode="numeric" aria-label="Час статичної"></td><td>—</td></tr>
+<tr><td>Динамічна</td><td><input type="text" id="t2" inputmode="numeric" aria-label="Час динамічної"></td><td><input type="text" id="n2" inputmode="numeric" aria-label="Кількість підйомів"></td></tr>
+<tr><td>Після пасивного відпочинку (1 хв)</td><td><input type="text" id="t3" inputmode="numeric" aria-label="Час після пасивного"></td><td>—</td></tr>
+<tr><td>Після активного відпочинку (1 хв)</td><td><input type="text" id="t4" inputmode="numeric" aria-label="Час після активного"></td><td>—</td></tr>
+</table>
+
+<h3>Висновки</h3>
+<label>Під час якої роботи м’яз утомився швидше?
+<select id="c1"><option value="">— обери —</option><option value="s">Статичної</option><option value="d">Динамічної</option><option value="e">Однаково</option></select></label>
+<p></p>
+<label>Після якого відпочинку працездатність відновилася краще?
+<select id="c2"><option value="">— обери —</option><option value="a">Активного</option><option value="p">Пасивного</option><option value="e">Однаково</option></select></label>
+<p></p>
+<label>Поясни своїми словами, чому настає втома (згадай кисень, молочну кислоту, нервові імпульси):
+<textarea id="c3" placeholder="Мій висновок..."></textarea></label>
+<button class="btn" onclick="chkLab()">Перевірити висновки</button><div class="res" id="rl"></div>
+
+<div class="tip"><b>Підказка:</b> під час статичної роботи м’яз весь час напружений, кровоносні судини стискаються, кисню надходить менше, молочна кислота накопичується швидше — втома настає раніше. За активного відпочинку кров швидше виводить продукти обміну.</div>
+</div>
+</section>
+
+<!-- САМООЦІНЮВАННЯ -->
+<section class="page" id="p3">
+<div class="card c"><h2>Самооцінювання</h2>
+<p>Чесно оціни себе. Обери «так», «частково» або «ні» для кожного твердження.</p>
+<div id="sa"></div>
+<button class="btn" onclick="advice()">Отримати поради</button>
+</div>
+<div id="adv"></div>
+</section>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const sc={tf:0,fill:0,match:0,test:0};
+const fmt=n=>String(n).replace(".",",");
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll("nav button").forEach(x=>x.setAttribute("aria-selected",x===b));
+ document.querySelectorAll(".page").forEach(p=>p.classList.toggle("on",p.id===b.dataset.p));
+ window.scrollTo(0,0);});
+function mark(el,ok){el.classList.remove("ok","bad");el.classList.add(ok?"ok":"bad");}
+
+/* 1. Так/ні */
+const TF=[
+["Лише 20–30 % енергії, що виділяється під час скорочення м’язів, витрачається на механічну роботу.",1],
+["Унаслідок тренувань кількість м’язових волокон у м’язі збільшується.",0],
+["За активного відпочинку працездатність утомленого м’яза відновлюється швидше, ніж за пасивного.",1],
+["Статична робота пов’язана з періодичним чергуванням скорочення та розслаблення м’язів.",0],
+["Тонус м’язів підвищує гормон адреналін.",1],
+["Накопичення молочної кислоти в м’язових клітинах покращує передачу нервового імпульсу.",0]];
+$("tf").innerHTML=TF.map((t,i)=>`<div class="q" id="tf${i}"><div>${i+1}. ${t[0]}</div>
+<label class="opt"><input type="radio" name="tf${i}" value="1">Так</label>
+<label class="opt"><input type="radio" name="tf${i}" value="0">Ні</label><div class="ans" id="tfa${i}"></div></div>`).join("");
+function chkTF(){let s=0;TF.forEach((t,i)=>{const v=document.querySelector(`input[name=tf${i}]:checked`);const ok=v&&+v.value===t[1];if(ok)s+=.5;mark($("tf"+i),ok);$("tfa"+i).textContent=ok?"":"Правильно: "+(t[1]?"так":"ні");});
+sc.tf=s;$("r1").textContent="Отримано: "+fmt(s)+" з 3 балів";sum();}
+
+/* 2. Пропуски */
+const BANK=["сили","швидкості","Джоуль","Ват","втома","тонус","середніх","великих"];
+const FILL=[
+["Механічну роботу вимірюють добутком ","сили"," на відстань, яку проходить тіло."],
+["У системі SI одиницею вимірювання роботи є ","Джоуль","."],
+["Тимчасове зниження або втрата працездатності м’яза внаслідок роботи — це ","втома","."],
+["Закономірність, за якої втома настає пізніше за середніх ритму й навантаження, називають законом ","середніх"," навантажень."]];
+const opts=`<option value="">—</option>`+BANK.map(w=>`<option>${w}</option>`).join("");
+$("fill").innerHTML=FILL.map((f,i)=>`<div class="q" id="f${i}">${i+1}. ${f[0]}<select id="fs${i}" style="width:auto;min-width:130px">${opts}</select>${f[2]}<div class="ans" id="fa${i}"></div></div>`).join("");
+function chkFill(){let s=0;FILL.forEach((f,i)=>{const ok=$("fs"+i).value===f[1];if(ok)s+=.5;mark($("f"+i),ok);$("fa"+i).textContent=ok?"":"Правильно: "+f[1];});
+sc.fill=s;$("r2").textContent="Отримано: "+fmt(s)+" з 2 балів";sum();}
+
+/* 3. Відповідність */
+const D=["Здатність тривалий час підтримувати заданий ритм роботи","Постійний стан часткового скорочення скелетних м’язів","Максимальне напруження, яке м’яз може розвинути","Тимчасове зниження працездатності внаслідок роботи","Забезпечує рухи тіла, пов’язана з чергуванням скорочення та розслаблення","М’яз тривалий час перебуває в напруженні без чергування скорочення та розслаблення"];
+const L="АБВГДЕ";
+const M=[["Сила м’яза",2],["Витривалість",0],["М’язовий тонус",1],["Втома м’язів",3],["Динамічна робота",4],["Статична робота",5]];
+$("defs").innerHTML=D.map((d,i)=>`<div><b>${L[i]}.</b> ${d}</div>`).join("");
+$("match").innerHTML=M.map((m,i)=>`<div class="mrow q" id="m${i}"><div>${i+1}. ${m[0]}<div class="ans" id="ma${i}"></div></div><select id="ms${i}" aria-label="${m[0]}"><option value="">—</option>${[...L].map((l,j)=>`<option value="${j}">${l}</option>`).join("")}</select></div>`).join("");
+function chkMatch(){let s=0;M.forEach((m,i)=>{const v=$("ms"+i).value;const ok=v!==""&&+v===m[1];if(ok)s+=.5;mark($("m"+i),ok);$("ma"+i).textContent=ok?"":"Правильно: "+L[m[1]];});
+sc.match=s;$("r3").textContent="Отримано: "+fmt(s)+" з 3 балів";sum();}
+
+/* 4. Тест */
+const T=[
+["Яка частина енергії, що виділяється під час скорочення м’язів, перетворюється на теплову?",["20–30 %","50 %","70–80 %","100 %"],2],
+["Що відбувається з м’язовими волокнами внаслідок тренувань?",["Збільшується їх кількість","Збільшується їхня товщина завдяки зростанню кількості скоротливих білків","Вони перетворюються на сухожилки","Нічого не змінюється"],1],
+["Яка з причин втоми м’язів зазначена в підручнику?",["Надлишок кисню в м’язах","Нестача кисню й накопичення молочної кислоти","Зменшення кількості волокон","Підвищення тонусу"],1],
+["Який відпочинок швидше відновлює працездатність утомленого м’яза?",["Пасивний","Активний","Жодний","Сон лише вночі"],1]];
+$("test").innerHTML=T.map((t,i)=>`<div class="q" id="t${i}"><div>${i+1}. ${t[0]}</div>${t[1].map((o,j)=>`<label class="opt"><input type="radio" name="t${i}" value="${j}">${o}</label>`).join("")}<div class="ans" id="ta${i}"></div></div>`).join("");
+function chkTest(){let s=0;T.forEach((t,i)=>{const v=document.querySelector(`input[name=t${i}]:checked`);const ok=v&&+v.value===t[2];if(ok)s++;mark($("t"+i),ok);$("ta"+i).textContent=ok?"":"Правильно: "+t[1][t[2]];});
+sc.test=s;$("r4").textContent="Отримано: "+s+" з 4 балів";sum();}
+
+function sum(){const t=sc.tf+sc.fill+sc.match+sc.test;$("tot").textContent=fmt(Math.round(t*2)/2);
+$("totmsg").textContent=($("name").value?$("name").value+", ":"")+"бали: завд.1 — "+fmt(sc.tf)+"; завд.2 — "+fmt(sc.fill)+"; завд.3 — "+fmt(sc.match)+"; завд.4 — "+sc.test+".";}
+["name"].forEach(id=>$(id).addEventListener("input",sum));
+
+/* Лабораторна */
+function chkLab(){let s=0,m=[];
+if($("c1").value==="s")s++;else m.push("Швидше втомлюється м’яз за статичної роботи.");
+if($("c2").value==="a")s++;else m.push("Активний відпочинок відновлює працездатність краще.");
+const t=$("c3").value.toLowerCase();const k=["кисн","молочн","імпульс"].filter(w=>t.includes(w)).length;
+if(k<2)m.push("У поясненні згадай щонайменше два чинники: кисень, молочна кислота, нервові імпульси.");
+$("rl").innerHTML=(m.length?"Перевір: "+m.join(" "):"Чудово, висновки відповідають матеріалу підручника!");}
+
+/* Самооцінювання */
+const SA=[
+["Я знаю","що таке сила м’яза й за якими показниками її оцінюють.","Перечитай абзац про силу м’яза (с. 90–91)."],
+["Я знаю","які бувають види роботи скелетних м’язів — статична й динамічна.","Розглянь мал. 21.1 на с. 91 і склади власні приклади."],
+["Я вмію","навести приклади статичної та динамічної роботи в повсякденному житті.","Запиши по 3 приклади кожного виду роботи зі свого життя."],
+["Я вмію","пояснити, чому більша частина енергії при скороченні перетворюється на теплову.","Повтори с. 90: 20–30 % — робота, 70–80 % — тепло."],
+["Я можу","назвати причини втоми м’язів.","Прочитай на с. 92 абзац про кисень і молочну кислоту."],
+["Я можу","пояснити, чим активний відпочинок кращий за пасивний.","Знайди в тексті с. 92 слово «Запам’ятаємо» й перекажи думку."],
+["Я розумію","закон середніх навантажень.","Поясни закон на прикладі бігу: надто повільно, середньо, надто швидко."],
+["Я розумію","роль нервової та гуморальної регуляції рухів (спинний мозок, мозочок, адреналін).","Складіть схему «хто чим керує» за текстом с. 92."],
+["Я вмію","виконати лабораторне дослідження та зробити висновок про розвиток втоми.","Повернись до вкладки «Лабораторне дослідження» й переглянь висновки."]];
+$("sa").innerHTML=SA.map((s,i)=>`<div class="sa"><div class="sa-t">${s[0]} ${s[1]}</div><div class="row">${["Так","Частково","Ні"].map((o,j)=>`<label><input type="radio" name="sa${i}" value="${2-j}"> ${o}</label>`).join("")}</div></div>`).join("");
+function advice(){
+let tot=0,ans=0,weak=[],part=[];
+SA.forEach((s,i)=>{const v=document.querySelector(`input[name=sa${i}]:checked`);if(!v)return;ans++;tot+=+v.value;if(+v.value===0)weak.push(s);else if(+v.value===1)part.push(s);});
+if(ans<SA.length){$("adv").innerHTML=`<div class="warn">Відповідь потрібна на всі твердження. Залишилось: ${SA.length-ans}.</div>`;return;}
+const nm=$("name").value.trim()||"друже",pct=tot/(SA.length*2),g=Math.round((sc.tf+sc.fill+sc.match+sc.test)*2)/2;
+let h=`<div class="card d"><h2>Поради для тебе, ${nm}</h2><p>Самооцінка: <b>${tot} з ${SA.length*2}</b> балів. Бали за вправи: <b>${fmt(g)} із 12</b>.</p>`;
+if(pct>=.8)h+=`<div class="tip"><b>Дуже добре!</b> Ти впевнено орієнтуєшся в темі. Спробуй пояснити її однокласнику або придумай власне запитання до розділу.</div>`;
+else if(pct>=.5)h+=`<div class="tip"><b>Непогано, але є що підтягнути.</b> Приділи 15–20 хв повторенню пунктів, де ти обрав(-ла) «частково».</div>`;
+else h+=`<div class="tip"><b>Потрібне повторення.</b> Перечитай § 21 повільно, роблячи нотатки, і виконай вправи ще раз. Звернись до вчителя чи однокласників по допомогу.</div>`;
+if(weak.length)h+=`<h3>Що варто опрацювати насамперед («ні»)</h3><ul>${weak.map(s=>`<li><b>${s[0]} ${s[1]}</b><br>${s[2]}</li>`).join("")}</ul>`;
+if(part.length)h+=`<h3>Що варто закріпити («частково»)</h3><ul>${part.map(s=>`<li><b>${s[0]} ${s[1]}</b><br>${s[2]}</li>`).join("")}</ul>`;
+if(g<7)h+=`<div class="warn">Результат вправ нижчий за 7 балів. Повтори пояснення в підручнику й повтори тест за день.</div>`;
+else if(pct<.5&&g>=9)h+=`<div class="tip">Вправи виконано добре — ти знаєш більше, ніж думаєш. Довіряй собі!</div>`;
+else if(pct>=.8&&g<9)h+=`<div class="warn">Ти оцінив(-ла) себе високо, але в вправах є помилки. Перевір відповіді, де були зауваження, і зрозумій, чому так.</div>`;
+h+=`<h3>Загальні поради</h3><ul><li>Чергуй навчання (20–25 хв) та активний відпочинок (рухи, розминка) — це закон середніх навантажень у дії.</li><li>Склади міні-схему: сила → напруження → тонус → витривалість → втома.</li><li>Поясни тему своїми словами вголос — так видно прогалини.</li></ul></div>`;
+$("adv").innerHTML=h;$("adv").scrollIntoView({behavior:"smooth"});}
+</script>
+</body>
+</html>
